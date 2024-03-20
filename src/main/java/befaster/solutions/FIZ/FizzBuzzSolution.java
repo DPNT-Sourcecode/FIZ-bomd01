@@ -7,7 +7,7 @@ import java.util.Set;
 
 public class FizzBuzzSolution {
 
-    public String fizz_buzz(Integer number){
+    public String fizzBuzz(Integer number){
         System.out.println("Number here at the begging: " + number);
         if(multipleOf3(number) || hasGoalInIt(number, 3) && multipleOf5(number) || hasGoalInIt(number, 5)){
             return "fizz buzz";
@@ -25,7 +25,7 @@ public class FizzBuzzSolution {
         return number.toString();
     }
 
-    public String fizzBuzz(Integer number) {
+    public String fizz_Buzz(Integer number) {
         boolean multiple3 = multipleOf3(number);
         boolean multiple5 = multipleOf5(number);
 
@@ -73,4 +73,6 @@ public class FizzBuzzSolution {
 //        return false;
     }
 
+
 }
+
