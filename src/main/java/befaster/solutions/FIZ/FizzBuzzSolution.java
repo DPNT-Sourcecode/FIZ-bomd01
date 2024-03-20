@@ -23,24 +23,24 @@ public class FizzBuzzSolution {
         return number.toString();
     }
 
-//    public String fizzBuzz(Integer number) {
-//        boolean multiple3 = multipleOf3(number);
-//        boolean multiple5 = multipleOf5(number);
-//
-//        if(multiple3 && multiple5){
-//            return "fizz buzz";
-//        }
-//
-//        if(multiple3){
-//            return "fizz";
-//        }
-//
-//        if(multiple5){
-//            return "buzz";
-//        }
-//
-//        return number.toString();
-//    }
+    public String fizzBuzz(Integer number) {
+        boolean multiple3 = multipleOf3(number);
+        boolean multiple5 = multipleOf5(number);
+
+        if(multiple3 && multiple5){
+            return "fizz buzz";
+        }
+
+        if(multiple3){
+            return "fizz";
+        }
+
+        if(multiple5){
+            return "buzz";
+        }
+
+        return number.toString();
+    }
 
     public boolean multipleOf3(Integer number){
         return number % 3 == 0;
@@ -54,18 +54,25 @@ public class FizzBuzzSolution {
         Set<Integer> set = new HashSet<>();
         while(true){
             set.add(num / 10);
-        }
-        int num = (int) num;
-        while(num > 0){
-            if(num % 10 == goal){
-                return true;
+            if ((int) num == 0){
+                break;
             }
-            num = num / 10;
         }
-        return false;
+        if(set.contains(goal)){
+            return true;
+        }
+        return  false;
+//        while(num > 0){
+//            if(num % 10 == goal){
+//                return true;
+//            }
+//            num = num / 10;
+//        }
+//        return false;
     }
 
 }
+
 
 
 
