@@ -4,6 +4,10 @@ import befaster.runner.SolutionNotImplementedException;
 
 public class FizzBuzzSolution {
 
+    public String fizz_buzz(Integer number){
+        return null;
+    }
+
     public String fizzBuzz(Integer number) {
         boolean multiple3 = multipleOf3(number);
         boolean multiple5 = multipleOf5(number);
@@ -31,4 +35,15 @@ public class FizzBuzzSolution {
         return number % 5 == 0;
     }
 
+    public boolean hasGoalInIt(Integer number, int goal){
+        while(number > 0){
+            if(number % 10 == goal){
+                return true;
+            }
+            number = number / 10;
+        }
+        return false;
+    }
+
 }
+
