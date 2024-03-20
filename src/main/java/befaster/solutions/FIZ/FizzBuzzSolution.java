@@ -8,11 +8,13 @@ import java.util.Set;
 public class FizzBuzzSolution {
 
     public String fizz_buzz(Integer number){
+        System.out.println("Number here at the begging: " + number);
         if(multipleOf3(number) || hasGoalInIt(number, 3) && multipleOf5(number) || hasGoalInIt(number, 5)){
             return "fizz buzz";
         }
 
         if(multipleOf3(number) || hasGoalInIt(number, 3)){
+            System.out.println("number here in second if: " + number);
             return "fizz";
         }
 
@@ -72,7 +74,3 @@ public class FizzBuzzSolution {
     }
 
 }
-
-
-
-
