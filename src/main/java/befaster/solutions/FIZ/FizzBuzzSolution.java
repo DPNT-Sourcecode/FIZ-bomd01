@@ -5,7 +5,19 @@ import befaster.runner.SolutionNotImplementedException;
 public class FizzBuzzSolution {
 
     public String fizz_buzz(Integer number){
-        return null;
+        if(multipleOf3(number) || hasGoalInIt(number, 3) && multipleOf5(number) || hasGoalInIt(number, 5)){
+            return "fizz buzz";
+        }
+
+        if(multipleOf3(number) || hasGoalInIt(number, 3)){
+            return "fizz";
+        }
+
+        if(multipleOf5(number) || hasGoalInIt(number, 5)){
+            return "buzz";
+        }
+
+        return number.toString();
     }
 
     public String fizzBuzz(Integer number) {
@@ -46,4 +58,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
